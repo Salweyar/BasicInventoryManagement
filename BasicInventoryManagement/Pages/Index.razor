@@ -1,0 +1,32 @@
+﻿@page "/"
+
+@inject IViewInventoriesByName Search
+@inject IEditInvetory Edit
+
+<PageTitle>Test Page</PageTitle>
+<br />
+
+<ul>
+    @foreach (var item in Inventories)
+    {
+        <li>
+            @item.InventoryName
+        </li>
+    }   
+</ul>
+
+@code {
+
+    private List<Inventory> Inventories = new List<Inventory>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var inventory = new Inventory();
+
+        await Edit.ExecuteAsync(inventory);
+
+        Inventories = (await Search.ExecuteAsync()).ToList();
+    }
+
+}
+
