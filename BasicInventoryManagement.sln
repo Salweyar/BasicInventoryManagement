@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{0EE2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InMemoryPlugin", "InMemoryPlugin\InMemoryPlugin.csproj", "{2153EC75-86CF-44AF-9F3B-4CF8C5DA963A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreSqlServer", "EFCoreSqlServer\EFCoreSqlServer.csproj", "{6385DEC7-03D6-4441-9E22-6BCF2A427D56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +31,17 @@ Global
 		{2153EC75-86CF-44AF-9F3B-4CF8C5DA963A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2153EC75-86CF-44AF-9F3B-4CF8C5DA963A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2153EC75-86CF-44AF-9F3B-4CF8C5DA963A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6385DEC7-03D6-4441-9E22-6BCF2A427D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6385DEC7-03D6-4441-9E22-6BCF2A427D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6385DEC7-03D6-4441-9E22-6BCF2A427D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6385DEC7-03D6-4441-9E22-6BCF2A427D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2153EC75-86CF-44AF-9F3B-4CF8C5DA963A} = {0EE2FA8A-56C4-48E6-A107-B555E67E1812}
+		{6385DEC7-03D6-4441-9E22-6BCF2A427D56} = {0EE2FA8A-56C4-48E6-A107-B555E67E1812}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF0613BD-63DC-4306-94CB-54D9FE5A215C}
