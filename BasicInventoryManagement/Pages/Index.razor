@@ -3,7 +3,6 @@
 @inject IViewInventoriesByName Search
 @inject IEditInvetory Edit
 
-<PageTitle>Test Page</PageTitle>
 <br />
 
 <ul>
@@ -21,11 +20,11 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var inventory = new Inventory();
+        //var inventory = new Inventory();
 
-        await Edit.ExecuteAsync(inventory);
+        //await Edit.ExecuteAsync(inventory);
 
-        Inventories = (await Search.ExecuteAsync()).ToList();
+        //Inventories = (await Search.ExecuteAsync()).ToList();
     }
 
 }

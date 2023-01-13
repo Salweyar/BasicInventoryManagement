@@ -2,6 +2,7 @@
 @inject IAddInventory Add
 @inject NavigationManager NavigationManager
 
+@attribute [Authorize(Policy = "Inventory")]
 
 <h3>AddInventory</h3>
 <br />
